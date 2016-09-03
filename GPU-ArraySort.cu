@@ -99,15 +99,15 @@ template <class type>
 //insertion sort
 template <class type>
  __device__ void insertionSort(type *input, int begin, int end){
-int i, j; //,tmp;
- for (i = begin+1; i < end; i++) {
- j = i;
- while (j > begin && input[j - 1] > input[j]) {
- swapD(input[j], input[j-1]);
- j--;
- }//end of while loop
-}
-}
+        int i, j; //,tmp;
+        for (i = begin+1; i < end; i++) {
+            j = i;
+            while (j > begin && input[j - 1] > input[j]) {
+                  swapD(input[j], input[j-1]);
+                   j--;
+                 }//end of while loop
+           }
+        }
 
 
 
